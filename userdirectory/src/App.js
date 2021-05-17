@@ -1,14 +1,17 @@
 import React from "react";
+import DataArea from "./components/DataArea";
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
-import DataArea from "./components/DataArea";
+
 
 function App() {
   return (
-  <Wrapper>
+    <div>
+      <Wrapper>
       <Header />
       <DataArea />
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 }
 

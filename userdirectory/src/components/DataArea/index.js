@@ -1,28 +1,34 @@
 import React, { Component } from "react";
 import DataBody from "../DataBody";
-import DataTable from "../DataTable";
+import TableHeader from "../DataTable";
 import API from "../../utils/API";
 
-class UserData extends Component {
+class DataArea extends Component {
     state = {
         search: "",
         results: []
     };
 
-    searchUser = query => {
-        API.search(query)
-        .then(res => this.setState({ results: res.data.data }))
-        .catch(err => console.log(err));
+    componentDidMount() {
+        this.searchUser();
     }
+
+    searchUser = () => {
+        API.search()
+        .then(res => this.setState({ results: res.data.results }))
+        .catch(err => console.log(err));
+    };
 
     render() {
         return (
             <div>
-                <DataTable />
+                <table className="table table-striped">
+                <TableHeader />
                 <DataBody results={this.state.results} />
+                </table>
             </div>
-        )
+        );
     }
 }
 
-export default UserData;
+export default DataArea;
