@@ -1,8 +1,15 @@
 import React from "react";
-// import OmdbContainer from "./components/OmdbContainer";
+import Header from "./components/Header";
+import Wrapper from "./components/Wrapper";
+import DataArea from "./components/DataArea";
 
 function App() {
-//   return <OmdbContainer />;
+  return (
+  <Wrapper>
+      <Header />
+      <DataArea />
+    </Wrapper>
+  );
 }
 
 export default App;

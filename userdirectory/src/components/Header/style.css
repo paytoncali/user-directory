@@ -1,0 +1,9 @@
+header {
+    background: navy;
+    border-bottom-color: red;
+    padding: 75px;
+}
+
+div {
+    color: hsl(0, 0%, 100%);
+}
