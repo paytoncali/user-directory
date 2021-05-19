@@ -1,10 +1,10 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function Header() {
   return (
     <header>
-      <div>User Directory</div>
+      <h2>User Directory</h2>
     </header>
   );
 }

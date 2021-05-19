@@ -48,16 +48,21 @@ class DataArea extends Component {
     render() {
         return (
             <div>
+                <div className="container justify-content-center">
                 <SearchBar 
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
                     />
+                </div>
+                <br></br>
+                <div className="container">
                 <table className="table table-striped">
                 <TableHeader 
                 handleNameSort={this.handleNameSort}/>
                 <DataBody results={this.state.results}
                  />
                 </table>
+                </div>
             </div>
         );
     }

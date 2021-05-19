@@ -1,9 +1,9 @@
 header {
-    background: navy;
-    border-bottom-color: red;
-    padding: 75px;
+    background: rgb(251, 246, 220);
 }
 
-div {
-    color: hsl(0, 0%, 100%);
+h2 {
+    color: rgb(75, 75, 75);
+    text-align: center;
+    padding: 45px;
 }
