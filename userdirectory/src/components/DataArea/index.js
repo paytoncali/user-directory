@@ -36,7 +36,13 @@ class DataArea extends Component {
     };
 
     handleNameSort = event => {
+        event.preventDefault();
+        console.log("hi")
+        const results = this.state.results;
 
+        const sortedResults = results.sort((nameOne, nameTwo) => nameOne.name.first.localeCompare(nameTwo.name.first))
+
+        this.setState({ results: sortedResults })
     }
 
     render() {
@@ -47,9 +53,9 @@ class DataArea extends Component {
                     handleInputChange={this.handleInputChange}
                     />
                 <table className="table table-striped">
-                <TableHeader />
+                <TableHeader 
+                handleNameSort={this.handleNameSort}/>
                 <DataBody results={this.state.results}
-                    handleNameSort={this.handleNameSort}
                  />
                 </table>
             </div>
