@@ -33,6 +33,7 @@ Email Address: paytoncaliw@gmail.com
 
 ### Deployment
 https://github.com/paytoncali/user-directory.git
+https://paytoncali.github.io/user-directory/
 
 ### License
 This application is covered by MIT
