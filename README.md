@@ -21,7 +21,7 @@ This application is used to search and order a list of users within a directory.
 ### Usage
 This application is used to will be used to search and order a list alphabetically within a directory. 
 
-![User Directory](userdirectory/images/userdirectory.png)
+![User Directory](/images/userdirectory.png)
   
 ### Questions
 
