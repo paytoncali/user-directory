@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchForm(props) {
+function SearchBar(props) {
   return (
     <form>
       <div className="form-group">
@@ -14,12 +14,9 @@ function SearchForm(props) {
           placeholder="Search for a Name"
           id="search"
         />
-        <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3">
-          Search
-        </button>
       </div>
     </form>
   );
 }
 
-export default SearchForm;
+export default SearchBar;

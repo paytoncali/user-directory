@@ -1,16 +1,20 @@
-import React from "react";
-import "./style.css";
+import React, { Component } from "react";
+import API from "../../utils/API";
+import SearchForm from "../SearchBar";
 
-function SearchResults(props) {
-  return (
-    <ul className="list-group search-results">
-      {props.results.map(result => (
-        <li key={result} className="list-group-item">
-          <img alt="Dog" src={result} className="img-fluid" />
-        </li>
-      ))}
-    </ul>
-  );
+class SearchForm extends Component {
+    state = {
+      results: {},
+      search: ""
+    };
+
+    componentDidMount() {
+      this.filterSearch();
+    }
+
+  filerSearch = () => {
+    API.search()
+    .then(res => )
+  }
+
 }
-
-export default SearchResults;

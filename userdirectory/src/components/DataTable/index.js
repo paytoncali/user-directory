@@ -6,7 +6,7 @@ function TableHeader(props) {
             <tr>
                 <th></th>
                 <th scope="col">Image</th>
-                <th scope="col" onClick={props.handleSort}>Name</th>
+                <th scope="col" onClick={props.handleNameSort}>Name</th>
                 <th scope="col">Phone</th>
                 <th scope="col">Email</th>
                 <th scope="col">DOB</th>
